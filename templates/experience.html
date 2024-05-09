@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<style>
+    * {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url('data:image/jpeg;base64,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');
+        font-family: sans-serif;
+        margin-top: 40px;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+
+    img {
+        display: inline-flex;
+        margin-left: auto;
+        margin-right: auto;
+        align-self: center;
+    }
+
+    .card {
+        margin: 0 auto;
+        /* Added */
+        float: none;
+        /* Added */
+        margin-bottom: 10px;
+        /* Added */
+        border-radius: 2.25rem;
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+
+    .card:hover {
+        transform: scale(1.2);
+        box-shadow: rgba(0, 0, 0, 0.6);
+    }
+</style>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Experience | {{ name }}</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark navbar-expand-lg" style="background-color:transparent">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="font-weight: bold;">
+                    <li class="nav-item">
+                        <a class="nav-link " href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/resume">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class='text-center py-3' style="color:white;font-size:55px;">
+        <b>EXPERIENCE</b>
+    </h1>
+
+    <div class="text-center">
+        <h2 style='color:blue;font-size: 35px;'><b><i>If u r underpaid its ur fault...</i></b>
+        </h2>
+        <h2 style='color:palevioletred;font-size: 20px'><i>-Tejaswi</i></h2>
+    </div>
+
+    {% for company in experienceinfo %}
+    <div class="card my-5 container" style="max-width: 1000px;">
+        <div class="row" style='align-items:center'>
+            <div class='mx-4' style='width:200px'>
+                <img src="{{ experienceinfo[company]['image'] }}" class="card-img mx-auto" width='150px'>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <p class="card-text mb-0" style="font-size: 20px;"><i><b>{{ experienceinfo[company]['designation']
+                                }}</b> @ {{ company }}</i>
+                    </p>
+                    <p class="card-text" style='color:grey'><i>{{ experienceinfo[company]['date'] }}</i></p>
+                    <p class="card-text" style="font-size:15px;">{{ experienceinfo[company]['info'] }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    <footer class='text-light bg-dark position-relative '>
+        <p class='text-center py-1 my-0'>
+            Made with ❤ by {{ name }} | <a href="https://github.com/TejaswiPonnamanda" style="color: white;text-decoration: auto;">Machine Learning Projects</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

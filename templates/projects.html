@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects | {{ name }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('data:image/jpeg;base64,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');
+            background-size: cover;
+            font-family: sans-serif;
+            margin-top: 40px;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav {
+            background-color: transparent !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffc107;
+        }
+
+        .card {
+            margin: 0 auto;
+            float: none;
+            margin-bottom: 10px;
+            border-radius: 2.25rem;
+            transition: 0.5s ease;
+            cursor: pointer;
+            background-color: #fff;
+            color: #000;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="font-weight: bold;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/resume">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="text-center py-3" style="color: white;font-size: 55px;">
+        <b>PROJECTS</b>
+    </h1>
+
+    <div class="text-center">
+        <h2 style="color: green;font-size: 35px;"><b><i>Trust the God Put the Efforts...</i></b></h2>
+        <h2 style="color: rgb(190, 30, 132);font-size: 20px"><i>- Tejaswi</i></h2>
+    </div>
+
+    {% for project in projectinfo %}
+    <div class="card my-5" style="max-width: 1000px;">
+        <div class="row" style="align-items:center">
+            <div class="mx-4" style="align-items:center;width:200px">
+                <img src="{{ projectinfo[project]['image'] }}" class="card-img my-2 mx-2">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <p class="card-text" style="font-size:25px;">
+                        <b>{{ project }}</b>
+                    </p>
+                    <p class="card-text" style="font-size:15px;">
+                        {{ projectinfo[project]['description'] }}
+                    </p>
+                    <p class="card-text mb-0" style="font-size:15px;color: grey;"><i>{{ projectinfo[project]['date'] }}</i></p>
+                    <!-- Add GitHub link -->
+                    <a href="{{ projectinfo[project]['github_link'] }}" class="btn btn-primary mt-2">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    <footer class="text-light bg-dark position-relative">
+        <p class="text-center py-1 my-0">
+            Made with ❤ by {{ name }} | <a href="https://github.com/TejaswiPonnamanda"
+                style="color: white;text-decoration: auto;">Machine Learning Projects</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
